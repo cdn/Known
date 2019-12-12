@@ -39,7 +39,7 @@ namespace Idno\Core {
             if (empty($language))
                 $language = 'en_US';
 
-            $language = str_replace('-', '_', $language);
+            $language = substr($language, 0, 2) . '_' . substr(strtoupper($language), 3);
             $this->language = $language;
 
             // Set locale, now we have one.
