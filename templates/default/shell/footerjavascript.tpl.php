@@ -19,9 +19,14 @@ if (\Idno\Core\Idno::site()->session()->isLoggedIn()) {
 
 $lang = \Idno\Core\Idno::site()->language()->getLanguage();
 
-$shortlang = substr($lang, 0, 2);
+$l10n = substr($lang, 0, 2);
 
-$l10n = ($lang != 'pt_BR' && substr($lang, 0, 2) != 'zh') ? $shortlang : str_replace('_', '-', $lang);
+if ($lang == 'pt_BR' || substr($lang, 0, 2) == 'zh') {
+    if ($lang == 'pt_BR') {
+        $lang = strtolower($lang);
+    }
+    $l10n = str_replace('_', '-', $lang);
+}
 
 ?>
 
