@@ -17,10 +17,18 @@ if (\Idno\Core\Idno::site()->session()->isLoggedIn()) {
 
 }
 
+$lang = \Idno\Core\Idno::site()->language()->getLanguage();
+
+$shortlang = substr($lang, 0, 2);
+
+$l10n = ($lang != 'pt_BR' && substr($lang, 0, 2) != 'zh') ? $shortlang : str_replace('_', '-', $lang);
+
 ?>
 
 <script
     src="<?php echo \Idno\Core\Idno::site()->config()->getStaticURL() ?>vendor/rmm5t/jquery-timeago/jquery.timeago.js"></script>
+<script
+    src="<?php echo \Idno\Core\Idno::site()->config()->getStaticURL() ?>vendor/rmm5t/jquery-timeago/locales/jquery.timeago.<?php echo $l10n; ?>.js"></script>
 <script src="<?php echo \Idno\Core\Idno::site()->config()->getStaticURL() ?>vendor/npm-asset/underscore/underscore-min.js"
         type="text/javascript"></script>
 <!--<script src="<?php echo \Idno\Core\Idno::site()->config()->getStaticURL() . 'vendor/idno/mentionjs/bootstrap-typeahead.js' ?>"
@@ -42,5 +50,4 @@ if ((\Idno\Core\Idno::site()->currentPage()) && $scripts = \Idno\Core\Idno::site
     }
     echo "<!-- End asset javascript -->";
 }
-?>
 
