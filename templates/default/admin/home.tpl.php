@@ -76,7 +76,7 @@
 
             <div class="row">
                 <div class="col-md-2">
-                    <p><label class="control-label" for="single_user"><strong>Single user</strong></label>
+                    <p><label class="control-label" for="single_user"><strong><?php echo \Idno\Core\Idno::site()->language()->_('Single user'); ?></strong></label>
                     </p>
                 </div>
                 <div class="config-toggle col-md-4">

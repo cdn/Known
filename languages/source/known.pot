@@ -778,6 +778,10 @@ msgstr ""
 msgid "This is the number of content posts displayed on each page."
 msgstr ""
 
+#: templates/default/admin/home.tpl.php:79
+msgid "Single user"
+msgstr ""
+
 #: templates/default/admin/home.tpl.php:88
 msgid ""
 "Is this a single-user site? If so, your profile information will be shown at "
