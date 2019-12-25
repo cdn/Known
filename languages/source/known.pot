@@ -788,6 +788,9 @@ msgid ""
 "the top of the homepage."
 msgstr ""
 
+msgid "Permalink Structure"
+msgstr ""
+
 #: templates/default/admin/home.tpl.php:116
 msgid "How permalinks for individual posts are constructed."
 msgstr ""

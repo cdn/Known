@@ -98,7 +98,7 @@
 
             <div class="row">
                 <div class="col-md-2">
-                    <p><label class="control-label" for="permalink_structure"><strong>Permalink Structure</strong></label></p>
+                    <p><label class="control-label" for="permalink_structure"><strong><?php echo \Idno\Core\Idno::site()->language()->_('Permalink Structure'); ?></strong></label></p>
                 </div>
                 <div class="col-md-4">
                     <?php foreach (array(
