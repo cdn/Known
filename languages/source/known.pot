@@ -788,7 +788,12 @@ msgid ""
 "the top of the homepage."
 msgstr ""
 
+#: templates/default/admin/home.tpl.php:101
 msgid "Permalink Structure"
+msgstr ""
+
+#: templates/default/admin/home.tpl.php:105
+msgid "<strong>(default)</strong>"
 msgstr ""
 
 #: templates/default/admin/home.tpl.php:116

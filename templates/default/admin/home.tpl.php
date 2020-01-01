@@ -102,7 +102,7 @@
                 </div>
                 <div class="col-md-4">
                     <?php foreach (array(
-                        '/:year/:slug' => '/:year/:slug <strong>(default)</strong>',
+                        '/:year/:slug' => '/:year/:slug ' . \Idno\Core\Idno::site()->language()->_('<strong>(default)</strong>'),
                         '/:year/:month/:slug' => '/:year/:month/:slug',
                         '/:year/:month/:day/:slug' => '/:year/:month/:day/:slug',
                     ) as $value => $label) { ?>
