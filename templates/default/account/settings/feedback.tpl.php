@@ -8,7 +8,7 @@
         <p class="explanation">
             <?php echo \Idno\Core\Idno::site()->language()->_("Want to share something with the Known team? We'd love to read your thoughts, suggestions, or ideas. We will personally read all of your feedback."); ?>
         </p>
-        
+
     </div>
 </div>
 
@@ -23,10 +23,10 @@
                        value="<?php echo htmlentities(\Idno\Core\Idno::site()->session()->currentUser()->email) ?>">
             </p>
 
-            <p class="feedback"><strong>To:</strong> feedback@withknown.com</p>
+            <p class="feedback"><strong><?php echo \Idno\Core\Idno::site()->language()->_('To'); ?>:</strong> feedback@withknown.com</p>
             <br>
 
-            <p class="feedback"><strong>Subject:</strong> <?php echo \Idno\Core\Idno::site()->language()->_('Feedback for the Known team'); ?></p>
+            <p class="feedback"><strong><?php echo \Idno\Core\Idno::site()->language()->_('Subject'); ?>:</strong> <?php echo \Idno\Core\Idno::site()->language()->_('Feedback for the Known team'); ?></p>
 
             <div class="control-group">
                 <textarea rows="7" class="feedback" placeholder="<?php echo \Idno\Core\Idno::site()->language()->_('Let us know what you think.'); ?>" name="message" required></textarea>

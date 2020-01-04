@@ -1991,6 +1991,14 @@ msgstr ""
 msgid "From"
 msgstr ""
 
+#: templates/default/account/settings/feedback.tpl.php:26
+msgid "To"
+msgstr ""
+
+#: templates/default/account/settings/feedback.tpl.php:29
+msgid "Subject"
+msgstr ""
+
 #: templates/default/account/settings/feedback.tpl.php:29
 msgid "Feedback for the Known team"
 msgstr ""
