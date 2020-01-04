@@ -32,7 +32,7 @@ if (empty($vars['user']) && !empty($vars['object'])) {
                             // the user's name over in the next div. TODO: find a better way to do this
                             // that retains visual consistency.
                             ?>
-                                <h1><a href="<?php echo $vars['user']->getEditURL() ?>" class="btn btn-default">Edit profile</a></h1>
+                                <h1><a href="<?php echo $vars['user']->getEditURL() ?>" class="btn btn-default"><?php echo \Idno\Core\Idno::site()->language()->_('Edit profile'); ?></a></h1>
                             <?php
 
                         }

@@ -407,6 +407,10 @@ msgstr ""
 msgid "Edit profile: %s"
 msgstr ""
 
+#: templates/default/entity/User.tpl.php:35
+msgid "Edit profile"
+msgstr ""
+
 #: Idno/Pages/Account/Password.php:26
 msgid "Password recovery email sent"
 msgstr ""
