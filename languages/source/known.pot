@@ -554,6 +554,30 @@ msgstr ""
 msgid "Notifications"
 msgstr ""
 
+#: templates/default/content/notification/rsvp.tpl.php:5:
+msgid "RSVPed to"
+msgstr ""
+
+#: templates/default/content/notification/mention.tpl.php:5:
+msgid "mentioned"
+msgstr ""
+
+#: templates/default/content/notification/like.tpl.php:5:
+msgid "liked"
+msgstr ""
+
+#: templates/default/content/notification/reply.tpl.php:5:
+msgid "replied to"
+msgstr ""
+
+#: templates/default/content/notification/reply.tpl.php:7:
+msgid "Reply"
+msgstr ""
+
+#: templates/default/content/notification/share.tpl.php:5:
+msgid "shared"
+msgstr ""
+
 #: Idno/Pages/Account/Settings.php:20
 msgid "Account settings"
 msgstr ""
