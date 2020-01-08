@@ -265,7 +265,7 @@ namespace Idno\Core {
             $this->url                       = $this->detectBaseURL();
             $this->static_url                = false;
             $this->title                     = 'New Known site'; // A default name for the site
-            $this->description               = 'A social website powered by Known'; // Default description
+            $this->description               = \Idno\Core\Idno::site()->language()->_('A social website powered by Known'); // Default description
             $this->timezone                  = 'UTC';
             $this->host                      = parse_url($this->url, PHP_URL_HOST); // The site hostname, without parameters etc
             $this->feed                      = $this->getDisplayURL() . 'content/all/?_t=rss';
