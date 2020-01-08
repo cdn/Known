@@ -106,7 +106,7 @@ msgid "Missing X-Known-Service-Signature, service call is not possible."
 msgstr ""
 
 #: ./Idno/Core/Service.php:27
-msgid "Sorry, signature doesn\\'t match up."
+msgid "Sorry, signature doesn't match up."
 msgstr ""
 
 #: ./Idno/Core/Service.php:44
@@ -130,7 +130,7 @@ msgid "No event passed"
 msgstr ""
 
 #: ./Idno/Core/AsynchronousQueue.php:64
-msgid "Event passed is not a queued event, and so can\\'t be dispatched"
+msgid "Event passed is not a queued event, and so can't be dispatched"
 msgstr ""
 
 #: ./Idno/Core/AsynchronousQueue.php:67
@@ -512,11 +512,11 @@ msgid "You are now following %s"
 msgstr ""
 
 #: ./Idno/Pages/Account/Settings/Following/Bookmarklet.php:180
-msgid "You\\'re already following %s"
+msgid "You're already following %s"
 msgstr ""
 
 #: ./Idno/Pages/Account/Settings/Following/Bookmarklet.php:183
-msgid "Sorry, that user doesn\\'t exist!"
+msgid "Sorry, that user doesn't exist!"
 msgstr ""
 
 #: ./Idno/Pages/Account/Settings/Following/Bookmarklet.php:185
@@ -601,7 +601,7 @@ msgid "Your password was reset!"
 msgstr ""
 
 #: ./Idno/Pages/Account/Password/Reset.php:64
-msgid "Sorry, your passwords either don\\'t match, or are too weak"
+msgid "Sorry, your passwords either don't match, or are too weak"
 msgstr ""
 
 #: ./Idno/Pages/Account/Notifications.php:36
@@ -658,7 +658,7 @@ msgid "There was a problem syndicating."
 msgstr ""
 
 #: ./Idno/Common/Plugin.php:87
-msgid "Plugin %s doesn\\'t have a version"
+msgid "Plugin %s doesn't have a version"
 msgstr ""
 
 #: ./Idno/Common/Page.php:397
@@ -682,11 +682,11 @@ msgid "Couldn't say anything about execution, probably something went wrong"
 msgstr ""
 
 #: ./Idno/Common/Page.php:741
-msgid "This content isn\\'t here."
+msgid "This content isn't here."
 msgstr ""
 
 #: ./Idno/Common/Page.php:757
-msgid "This page can\\'t be found."
+msgid "This page can't be found."
 msgstr ""
 
 #: ./Idno/Entities/GenericDataItem.php:43
