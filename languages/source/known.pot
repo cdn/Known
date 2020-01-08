@@ -29,11 +29,11 @@ msgstr ""
 
 #: ./templates/email-text/account/invite.tpl.php:26
 msgid "Get started with *%s* by setting up your account"
-msgstr "Komencu per *%s* per agordo de via konto"
+msgstr ""
 
 #: ./templates/email/account/invite.tpl.php:10
 msgid "Get started with <strong>%s</strong> by setting up your account"
-msgstr "Komencu per <strong>%s</strong> per agordo de via konto"
+msgstr ""
 
 #: ./templates/email-text/account/invite.tpl.php:28
 #: ./templates/email/account/invite.tpl.php:13
@@ -1228,6 +1228,10 @@ msgstr ""
 msgid "Sent"
 msgstr ""
 
+#: ./templates/default/admin/users.tpl.php:145
+msgid "Are you sure? The user won't be able to register."
+msgstr ""
+
 #: ./templates/default/admin/users.tpl.php:171
 msgid "Block email addresses"
 msgstr ""
@@ -1241,6 +1245,10 @@ msgstr ""
 
 #: ./templates/default/admin/users.tpl.php:197
 msgid "Blocked email addresses"
+msgstr ""
+
+#: templates/default/admin/users.tpl.php:219
+msgid "Remove block"
 msgstr ""
 
 #: ./templates/default/admin/export.tpl.php:9
@@ -1808,6 +1816,18 @@ msgstr ""
 
 #: ./templates/default/forms/components/usersearch/user.tpl.php:67
 msgid "Yes"
+msgstr ""
+
+#: ./templates/default/account/export.tpl.php:29
+msgid "No"
+msgstr ""
+
+#: ./templates/default/admin/homepage.tpl.php:45
+msgid "On"
+msgstr ""
+
+#: ./templates/default/admin/homepage.tpl.php:46
+msgid "Off"
 msgstr ""
 
 #: ./templates/default/forms/components/usersearch/user.tpl.php:71
