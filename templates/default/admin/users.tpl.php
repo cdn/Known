@@ -137,12 +137,12 @@ if (!empty($vars['invitations'])) {
                                             <small>
                                             <?php
 
-                                                echo \Idno\Core\Idno::site()->actions()->createLink(\Idno\Core\Idno::site()->config()->getDisplayURL() . 'admin/users', '<i class="fa fa-sync"></i> Resend', array('invitation_id' => $invitation->getID(), 'action' => 'resend_invitation'), array('class' => '', 'confirm' => true, 'confirm-text' => 'Are you sure? The user will receive a second email.')) . '<br>';
+                                                echo \Idno\Core\Idno::site()->actions()->createLink(\Idno\Core\Idno::site()->config()->getDisplayURL() . 'admin/users', '<i class="fa fa-sync"></i> ' . \Idno\Core\Idno::site()->language()->_('Resend'), array('invitation_id' => $invitation->getID(), 'action' => 'resend_invitation'), array('class' => '', 'confirm' => true, 'confirm-text' => \Idno\Core\Idno::site()->language()->_('Are you sure? The user will receive a second email.'))) . '<br>';
 
                                             ?>
                                             <?php
 
-                                                echo \Idno\Core\Idno::site()->actions()->createLink(\Idno\Core\Idno::site()->config()->getDisplayURL() . 'admin/users', '<i class="fa fa-times"></i> Remove', array('invitation_id' => $invitation->getID(), 'action' => 'remove_invitation'), array('class' => '', 'confirm' => true, 'confirm-text' => 'Are you sure? The user won\'t be able to register.')) . '<br>';
+                                                echo \Idno\Core\Idno::site()->actions()->createLink(\Idno\Core\Idno::site()->config()->getDisplayURL() . 'admin/users', '<i class="fa fa-times"></i> ' . \Idno\Core\Idno::site()->language()->_('Remove'), array('invitation_id' => $invitation->getID(), 'action' => 'remove_invitation'), array('class' => '', 'confirm' => true, 'confirm-text' => \Idno\Core\Idno::site()->language()->_('Are you sure? The user won\'t be able to register.'))) . '<br>';
 
                                             ?>
                                             </small>
@@ -171,8 +171,7 @@ if (!empty($vars['invitations'])) {
                     <h3><?php echo \Idno\Core\Idno::site()->language()->_('Block email addresses'); ?></h3>
 
                     <p>
-                        <?php echo \Idno\Core\Idno::site()->language()->_('By blocking email addresses, you prevent people using those email addresses from registering on
-                        your site. Enter the email addresses you want to block below.'); ?>
+                        <?php echo \Idno\Core\Idno::site()->language()->_('By blocking email addresses, you prevent people using those email addresses from registering on your site. Enter the email addresses you want to block below.'); ?>
                     </p>
 
                     <textarea name="blocked_emails" class="form-control" placeholder="user@email.com"></textarea>
@@ -216,7 +215,7 @@ if (!empty($vars['invitations'])) {
                                             <small>
                                             <?php
 
-                                                echo \Idno\Core\Idno::site()->actions()->createLink(\Idno\Core\Idno::site()->config()->getDisplayURL() . 'admin/users', '<i class="fa fa-times"></i> Remove block', array('blocked_emails' => $email, 'action' => 'unblock_emails'), array('class' => '', 'confirm' => true, 'confirm-text' => 'Are you sure? The user will be able to log in and post again.')) . '<br>';
+                                                echo \Idno\Core\Idno::site()->actions()->createLink(\Idno\Core\Idno::site()->config()->getDisplayURL() . 'admin/users', '<i class="fa fa-times"></i> ' . \Idno\Core\Idno::site()->language()->_('Remove block'), array('blocked_emails' => $email, 'action' => 'unblock_emails'), array('class' => '', 'confirm' => true, 'confirm-text' => \Idno\Core\Idno::site()->language()->_('Are you sure? The user will be able to log in and post again.'))) . '<br>';
 
                                             ?>
                                             </small>
