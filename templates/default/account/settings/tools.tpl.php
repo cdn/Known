@@ -67,7 +67,7 @@
             <div class="col-md-8">
                 
                 <form id="apikey_form"><?php echo $t->__(['action' => '/account/settings/tools/'])->draw('forms/token')?>
-                    <input type="text" id="apikey" class=" form-control" name="apikey" value="Click to show" readonly></form>
+                    <input type="text" id="apikey" class=" form-control" name="apikey" value="<?php echo \Idno\Core\Idno::site()->language()->_('Click to show') ?>" readonly></form>
             </div>
 
             <div class="col-md-1">
