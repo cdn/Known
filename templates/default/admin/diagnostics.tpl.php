@@ -63,7 +63,7 @@
 <script>
     $(document).ready(function(){
         $('#diagnostics-report-run').click(function(){
-            $(this).html("Generating...").attr('disabled', 'true');
+            $(this).html("<?php echo \Idno\Core\Idno::site()->language()->_("Generating...") ?>").attr('disabled', 'true');
             
             $('#diagnostics-report pre').load('<?php echo \Idno\Core\Idno::site()->currentPage()->currentUrl(); ?>', function(){
                 $('#diagnostics-report-run').hide();

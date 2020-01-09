@@ -2045,6 +2045,10 @@ msgstr ""
 msgid "Your API key"
 msgstr ""
 
+#: ./templates/default/account/settings/tools.tpl.php:70
+msgid "Click to show"
+msgstr ""
+
 #: ./templates/default/account/settings/tools.tpl.php:76
 msgid "Revoke"
 msgstr ""
