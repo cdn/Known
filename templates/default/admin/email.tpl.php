@@ -26,7 +26,7 @@
                     <p class="control-label" for="name"><strong><?php echo \Idno\Core\Idno::site()->language()->_('Site email address'); ?></strong></p>
                 </div>
                 <div class="col-md-4">
-                    <input type="text" id="from_email" placeholder="Site email address" class="form-control" name="from_email"
+                    <input type="text" id="from_email" placeholder="<?php echo \Idno\Core\Idno::site()->language()->_('Site email address') ?>" class="form-control" name="from_email"
                            value="<?php echo htmlspecialchars(\Idno\Core\Idno::site()->config()->from_email) ?>">
                 </div>
                 <div class="col-md-6">
@@ -48,7 +48,7 @@
                     <p class="control-label" for="name"><strong><?php echo \Idno\Core\Idno::site()->language()->_('SMTP host'); ?></strong></p>
                 </div>
                 <div class="col-md-4">
-                    <input type="text" id="smtp_host" placeholder="SMTP host" class="form-control" name="smtp_host"
+                    <input type="text" id="smtp_host" placeholder="<?php echo \Idno\Core\Idno::site()->language()->_('SMTP host') ?>" class="form-control" name="smtp_host"
                            value="<?php echo htmlspecialchars(\Idno\Core\Idno::site()->config()->smtp_host) ?>">
                 </div>
                 <div class="col-md-6">
@@ -62,7 +62,7 @@
                     <p class="control-label" for="name"><strong><?php echo \Idno\Core\Idno::site()->language()->_('SMTP username'); ?></strong></p>
                 </div>
                 <div class="col-md-4">
-                    <input type="text" id="smtp_username" placeholder="SMTP username" class="form-control" name="smtp_username"
+                    <input type="text" id="smtp_username" placeholder="<?php echo \Idno\Core\Idno::site()->language()->_('SMTP username') ?>" class="form-control" name="smtp_username"
                            value="<?php echo htmlspecialchars(\Idno\Core\Idno::site()->config()->smtp_username) ?>">
                 </div>
                 <div class="col-md-6">
@@ -76,7 +76,7 @@
                     <p class="control-label" for="name"><strong><?php echo \Idno\Core\Idno::site()->language()->_('SMTP password'); ?></strong></p>
                 </div>
                 <div class="col-md-4">
-                    <input type="password" id="smtp_password" placeholder="SMTP password" class="form-control"
+                    <input type="password" id="smtp_password" placeholder="<?php echo \Idno\Core\Idno::site()->language()->_('SMTP password') ?>" class="form-control"
                            name="smtp_password"
                            value="<?php echo htmlspecialchars(\Idno\Core\Idno::site()->config()->smtp_password) ?>">
                 </div>
@@ -91,7 +91,7 @@
                     <p class="control-label" for="name"><strong><?php echo \Idno\Core\Idno::site()->language()->_('SMTP port'); ?></strong></p>
                 </div>
                 <div class="col-md-4">
-                    <input type="text" id="smtp_port" placeholder="SMTP password" class="form-control" name="smtp_port"
+                    <input type="text" id="smtp_port" placeholder="<?php echo \Idno\Core\Idno::site()->language()->_('SMTP port') ?>" class="form-control" name="smtp_port"
                            value="<?php
 
                                $port = (int)\Idno\Core\Idno::site()->config()->smtp_port;
@@ -117,9 +117,9 @@
                     <select name="smtp_secure">
                         <?php
                         foreach ([
-                                         'No'        => false,
-                                         'Yes (TLS)' => 'tls',
-                                         'Yes (SSL)' => 'ssl'
+                                         \Idno\Core\Idno::site()->language()->_('No')        => false,
+                                         \Idno\Core\Idno::site()->language()->_('Yes') . ' (TLS)' => 'tls',
+                                         \Idno\Core\Idno::site()->language()->_('Yes') . ' (SSL)' => 'ssl'
                                      ] as $field => $value) {
                             ?>
                                 <option
