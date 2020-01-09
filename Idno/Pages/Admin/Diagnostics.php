@@ -33,7 +33,7 @@ namespace Idno\Pages\Admin {
                         $report .= "\n";
                     }
                 } else {
-                    $report .= "Basic checks on installation discovered no problems.\n\n";
+                    $report .= \Idno\Core\Idno::site()->language()->_("Basic checks on installation discovered no problems.") . "\n\n";
                 }
 
                 $config                       = \Idno\Core\Idno::site()->config();
@@ -70,11 +70,12 @@ namespace Idno\Pages\Admin {
 
             // Check Known version
             if ($remoteVersion = \Idno\Core\RemoteVersion::build()) {
+                $version = \Idno\Core\RemoteVersion::version();
                 if (\Idno\Core\Version::build() < $remoteVersion) {
                     $basics['status']             = 'Failure';
                     $basics['report']['version'] = [
                         'status'  => 'Warning',
-                        'message' => 'Your build of Known is behind the latest version from Github, if you\'re having problems you might try updating to the latest version!<br /> <a href="https://github.com/idno/Known" target="_blank">Update now.</a>'
+                        'message' => \Idno\Core\Idno::site()->language()->_("Your build of Known is behind the latest version from Github (%s - %s). If you're having problems, you may want to try updating to the latest version!<br /> <a href=\"https://github.com/idno/Known\" target=\"_blank\">Update now.</a>", [$version, $remoteVersion])
                     ];
 
                 } else {
@@ -93,7 +94,7 @@ namespace Idno\Pages\Admin {
                 $basics['status']             = 'Failure';
                 $basics['report']['package'] = [
                     'status'  => 'Warning',
-                    'message' => 'You appear to be running directly from a git checkout. While this is fine, you might find a pre-packaged version of Known more stable.'
+                    'message' => \Idno\Core\Idno::site()->language()->_('You appear to be running directly from a git checkout. While this is fine, you might find a pre-packaged version of Known more stable.')
                 ];
             }
 
@@ -156,22 +157,22 @@ namespace Idno\Pages\Admin {
                     if (file_exists($upload_path) && is_dir($upload_path)) {
                         if (!is_readable($upload_path)) {
                             $basics['status'] = 'Failure';
-                            $basics['report']['upload-path']['message'] .= 'We can\'t read data from ' . htmlspecialchars($upload_path) . ' - please check permissions and try again.';
+                            $basics['report']['upload-path']['message'] .= \Idno\Core\Idno::site()->language()->_('We can\'t read data from %s - please check permissions and try again.', [htmlspecialchars($upload_path)]);
                             $basics['report']['upload-path']['status'] = 'Failure';
                         }
                         if (!is_writable($upload_path)) {
                             $basics['status'] = 'Failure';
-                            $basics['report']['upload-path']['message'] .= 'We can\'t write data to ' . htmlspecialchars($upload_path) . ' - please check it is writable by your web server user.';
+                            $basics['report']['upload-path']['message'] .= \Idno\Core\Idno::site()->language()->_('We can\'t write data to %s - please check it is writable by your web server user.', [htmlspecialchars($upload_path)]);
                             $basics['report']['upload-path']['status'] = 'Failure';
                         }
                     } else {
                         $basics['status'] = 'Failure';
-                        $basics['report']['upload-path']['message'] .= 'The upload path ' . htmlspecialchars($upload_path) . ' either doesn\'t exist or isn\'t a directory.';
+                        $basics['report']['upload-path']['message'] .= \Idno\Core\Idno::site()->language()->_('The upload path %s either doesn\'t exist or isn\'t a directory.', [htmlspecialchars($upload_path)]);
                         $basics['report']['upload-path']['status'] = 'Failure';
                     }
                 } else {
                     $basics['status'] = 'Failure';
-                    $basics['report']['upload-path']['message'] .= 'The upload path ' . htmlspecialchars($upload_path) . ' either doesn\'t exist or isn\'t a directory.';
+                    $basics['report']['upload-path']['message'] .= \Idno\Core\Idno::site()->language()->_('The upload path %s either doesn\'t exist or isn\'t a directory.', [htmlspecialchars($upload_path)]);
                     $basics['report']['upload-path']['status'] = 'Failure';
                 }
             } else {

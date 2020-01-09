@@ -2,6 +2,26 @@
 msgid "A social website powered by Known"
 msgstr ""
 
+#: ./templates/email-text/content/notification/like.tpl.php:8
+msgid "View post:"
+msgstr ""
+
+#: ./Idno/Pages/Admin/Diagnostics.php:96
+msgid "You appear to be running directly from a git checkout. While this is fine, you might find a pre-packaged version of Known more stable."
+msgstr ""
+
+#: ./Idno/Pages/Admin/Diagnostics.php:160:
+msgid "We can't read data from %s - please check permissions and try again."
+msgstr ""
+
+#: ./Idno/Pages/Admin/Diagnostics.php:165
+msgid "We can't write data to %s - please check it is writable by your web server user."
+msgstr ""
+
+#: ./Idno/Pages/Admin/Diagnostics.php:169 ./Idno/Pages/Admin/Diagnostics.php:174
+msgid "The upload path %s either doesn't exist or isn't a directory."
+msgstr ""
+
 #: ./Idno/Entities/Invitation.php:110
 msgid "You've been invited to join %s"
 msgstr ""
@@ -413,6 +433,10 @@ msgstr ""
 
 #: ./Idno/Pages/Admin/About.php:20 templates/default/admin/about.tpl.php:5
 msgid "About Known"
+msgstr ""
+
+#: ./Idno/Pages/Admin/EmailTest.php:21
+msgid "Test email from %s!"
 msgstr ""
 
 #: ./Idno/Pages/Admin/EmailTest.php:26
@@ -1652,14 +1676,12 @@ msgid ""
 msgstr ""
 
 #: ./templates/default/robot/wizard.tpl.php:26
-msgid ""
-"Beep! That was a great update. Why not <a href=\"{{facebookurl}}\" target="
-"\"blank\" onclick=\"window.open('{{facebookurl}}"
+msgid "Beep!"
 msgstr ""
 
-#: ./templates/default/robot/wizard.tpl.php:39
+#: ./templates/default/robot/wizard.tpl.php:27
 msgid ""
-"Zeep! That was a great update. Why not <a href=\"{{facebookurl}}\" target="
+" That was a great update. Why not <a href=\"{{facebookurl}}\" target="
 "\"blank\" onclick=\"window.open('{{facebookurl}}"
 "', 'newwindow', 'width=600, height=350'); return false;\">share your new website "
 "on Facebook</a> and <a href=\"{{twitterurl}}\">Twitter</a> so your friends know "
@@ -1667,10 +1689,12 @@ msgid ""
 "contentCreateForm('photo', '{{baseurl}}photo/edit/'); return false;\">Try posting one</a>!"
 msgstr ""
 
+#: ./templates/default/robot/wizard.tpl.php:39
+msgid "Zeep!"
+msgstr ""
+
 #: ./templates/default/robot/wizard.tpl.php:52
-msgid ""
-"Beep boop! That was a great update. Why not <a href=\"{{facebookurl}}\" "
-"target=\"blank\" onclick=\"window.open('{{facebookurl}}"
+msgid "Beep boop!"
 msgstr ""
 
 #: ./templates/default/robot/wizard.tpl.php:57
@@ -2360,4 +2384,12 @@ msgid ""
 "%s). If you're having problems, you may want to try updating to the latest "
 "version.\n"
 "Update now: https://github.com/idno/Known\n"
+msgstr ""
+
+#: ./Idno/Pages/Admin/Diagnostics.php:77
+msgid ""
+"Your build of Known is behind the latest version from Github (%s - %s). "
+"If you're having problems, you may want to try updating to the latest "
+"version!<br /> "
+"<a href="https://github.com/idno/Known" target="_blank">Update now.</a>"
 msgstr ""
