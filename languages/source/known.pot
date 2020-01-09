@@ -1335,6 +1335,10 @@ msgstr ""
 msgid "Generate detailed report"
 msgstr ""
 
+#: ./templates/default/admin/diagnostics.tpl.php:66
+msgid "Generating..."
+msgstr ""
+
 #: ./templates/default/admin/email.tpl.php:5
 msgid "Email settings"
 msgstr ""
@@ -2391,5 +2395,5 @@ msgid ""
 "Your build of Known is behind the latest version from Github (%s - %s). "
 "If you're having problems, you may want to try updating to the latest "
 "version!<br /> "
-"<a href="https://github.com/idno/Known" target="_blank">Update now.</a>"
+"<a href=\"https://github.com/idno/Known\" target=\"_blank\">Update now.</a>"
 msgstr ""
