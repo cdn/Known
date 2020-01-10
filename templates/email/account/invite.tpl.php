@@ -3,7 +3,7 @@
 </div><br>
 <hr/>
 <br>
-<?php echo \Idno\Core\Idno::site()->language()->_('Hi there! Your friend <strong>%s</strong> has invited you to join', [$vars['inviter']]) ?> <a href="<?php echo \Idno\Core\Idno::site()->config()->getDisplayURL()?>" style="color: #73b2e3; text-decoration: none;"><?php echo \Idno\Core\Idno::site()->config()->title?></a>.
+<?php echo \Idno\Core\Idno::site()->language()->_('Hi there! Your friend <strong>%s</strong> has invited you to join <%s>', [$vars['inviter'], '<a href="' . \Idno\Core\Idno::site()->config()->getDisplayURL() . '" style="color: #73b2e3; text-decoration: none;">' . \Idno\Core\Idno::site()->config()->title . '</a>']) ?>.
 <br><br>
 <?php echo \Idno\Core\Idno::site()->language()->_('You can use this space to publish your stories, share things that interest you, and discuss things that matter.') ?>
 <br><br>
