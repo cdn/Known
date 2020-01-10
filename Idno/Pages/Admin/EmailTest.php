@@ -18,7 +18,7 @@ namespace Idno\Pages\Admin {
             try {
                 $message = new \Idno\Core\Email();
                 $message->addTo($email);
-                $message->setSubject("Test email from " . \Idno\Core\Idno::site()->config()->title . '!');
+                $message->setSubject(\Idno\Core\Idno::site()->language()->_("Test email from %s!", [\Idno\Core\Idno::site()->config()->title]));
                 $message->setHTMLBodyFromTemplate('admin/emailtest');
                 $message->setTextBodyFromTemplate('admin/emailtest');
 
