@@ -28,4 +28,4 @@
 <?php echo \Idno\Core\Idno::site()->language()->_('Sign up now') ?>: <?php echo \Idno\Core\Idno::site()->config()->getDisplayURL()?>account/register/?email=<?php echo urlencode($vars['email'])?>&code=<?php echo urlencode($vars['code'])?>
 
 
-<?php echo \Idno\Core\Idno::site()->language()->_('If you have any questions at all, please don\'t hesitate to contact us by sending an email to '); echo \Idno\Core\Idno::site()->config()->from_email;
+<?php echo \Idno\Core\Idno::site()->language()->_('If you have any questions at all, please don\'t hesitate to contact us by sending an email to %s', [\Idno\Core\Idno::site()->config()->from_email]);
