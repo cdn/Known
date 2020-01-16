@@ -16,6 +16,12 @@
     <div class="col-md-10 col-md-offset-1">
         <h3><?php echo \Idno\Core\Idno::site()->language()->_('Manage site users'); ?></h3>
 
+        <p><?php if ($vars['count'] != 1) {
+    echo \Idno\Core\Idno::site()->language()->_('Your site has <strong>%s</strong> users', [$vars['count']]);
+            } else {
+    echo \Idno\Core\Idno::site()->language()->_('Your site has <strong>1</strong> user');
+} ?>.
+        </p>
         <p>
             <?php echo \Idno\Core\Idno::site()->language()->_('Your site has'); ?> <strong><?php echo $vars['count'] ?></strong> <?php if ($vars['count'] != 1) {
                                                                                                                        echo \Idno\Core\Idno::site()->language()->_('users');
