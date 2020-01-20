@@ -7,7 +7,7 @@ if ($posse = $vars['object']->getPosseLinks()) {
     <a name="posse"></a>
 
     <p>
-        Also on:
+        <?php echo \Idno\Core\Idno::site()->language()->_('Also on') ?>:
     <?php
 
     foreach ($posse as $service => $posse_links) {
