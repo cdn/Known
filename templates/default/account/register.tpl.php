@@ -13,7 +13,7 @@
                 <div class="control-group">
                    <label class="control-label" for="inputUsername"><?php echo \Idno\Core\Idno::site()->language()->_('Your name'); ?></label>
                     <div class="controls">
-                        <input type="text" id="inputName" placeholder="Henri Matisse" class="" style="width: 100%" name="name" value="">
+                        <input type="text" id="inputName" placeholder="<?php echo \Idno\Core\Idno::site()->language()->_('Henri Matisse') ?>" class="" style="width: 100%" name="name" value="">
                     </div>
                 </div>
                 <div class="control-group">
