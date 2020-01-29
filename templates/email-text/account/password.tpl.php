@@ -10,6 +10,7 @@
 
  ?>
 
+
 <?php echo \Idno\Core\Idno::site()->language()->_('We heard you forgot your password. Don\'t worry. It happens to the best of us.') ?>
 
 
