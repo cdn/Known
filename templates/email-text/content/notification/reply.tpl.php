@@ -13,10 +13,8 @@ Here's what they said:
 
 if (!empty($post)) {
 
-    ?>
-
-    View post: <?php echo $post->getDisplayURL()?>
-    <?php
+    echo \Idno\Core\Idno::site()->language()->_('View post:');
+    echo ' ' . $post->getDisplayURL();
 
 }
 
