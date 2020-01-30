@@ -21,7 +21,7 @@ namespace Idno\Pages\Following {
 
                     $t = \Idno\Core\Idno::site()->template();
                     $t->__(array(
-                        'title' => 'Subscribe to ' . $feed->getTitle(),
+                        'title' => \Idno\Core\Idno::site()->language()->_('Subscribe to %s', [$feed->getTitle()]),
                         'body'  => $t->__(array(
                             'feed'  => $feed,
                             'items' => $items
