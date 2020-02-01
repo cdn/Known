@@ -4,7 +4,7 @@
 
     $underline = mb_strlen($joinus);
 
-    for($u = 1; $u < $underline; $u++) {
+    for($u = 0; $u < $underline; $u++) {
         echo '=';
     }
 
