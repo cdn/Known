@@ -4,9 +4,10 @@ $annotation   = $notification->getObject();
 $post         = $notification->getTarget();
 ?>
 
-<a href="<?php echo $annotation['owner_url']?>"><img src="<?php echo $annotation['owner_image']?>" style="width: 100px; margin-left: 10px; margin-bottom: 10px" align="right"></a>Hi! We wanted to let you know that <strong><a href="<?php echo $annotation['owner_url']?>"><?php echo $annotation['owner_name']?></a></strong> replied to the post <strong><a href="<?php echo $post->getDisplayURL();?>"><?php echo $post->getNotificationTitle()?></a></strong>.<br>
+<a href="<?php echo $annotation['owner_url']?>"><img src="<?php echo $annotation['owner_image']?>" style="width: 100px; margin-left: 10px; margin-bottom: 10px" align="right"></a><?php echo \Idno\Core\Idno::site()->language()->_('Hi! We wanted to let you know that %s replied to the post %s.',
+ ['<strong><a href="' . $annotation['owner_url'] . '">' , $annotation['owner_name'] . '</a></strong>', '<strong><a href="' . $post->getDisplayURL() . '">' . $post->getNotificationTitle() . '</a></strong>']) ?><br>
 <br>
-Here's what they said:<br>
+<?php echo \Idno\Core\Idno::site()->language()->_("Here's what they said:") ?><br>
 <br>
 <blockquote>
     <?php echo $annotation['content']?>
