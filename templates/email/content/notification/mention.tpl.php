@@ -10,8 +10,11 @@ $target       = $notification->getTarget();
     </a>
 <?php } ?>
 
-Hi! We wanted to let you know that <strong><a href="<?php echo $annotation['owner_url']?>"><?php echo $annotation['owner_name']?></a></strong>
-mentioned you on <a href="<?php echo $annotation['permalink'];?>"><?php echo $annotation['permalink'];?></a>
+<?php echo \Idno\Core\Idno::site()->language()->_('Hi! We wanted to let you know that %s mentioned you on %s',
+[
+'<strong><a href="' . $annotation['owner_url'] . '">' . $annotation['owner_name'] . '</a></strong>',
+'<a href="' . $annotation['permalink'] . '">' . $annotation['permalink'] . '</a>'
+]) ?>
 
 <?php
     unset($this->vars['notification']);
