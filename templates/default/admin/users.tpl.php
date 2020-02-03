@@ -98,7 +98,7 @@ if (\Idno\Core\Idno::site()->config()->canAddUsers()) {
                     </p>
 
                     <p>
-                        <input type="submit" class="btn btn-primary" value="Add">
+                        <input type="submit" class="btn btn-primary" value="<?php echo \Idno\Core\Idno::site()->language()->_('Add') ?>">
                         <input type="hidden" name="action" value="add_user">
                         <?= \Idno\Core\Idno::site()->actions()->signForm('/admin/users') ?>
                     </p>
