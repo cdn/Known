@@ -2343,9 +2343,9 @@ namespace Idno\Common {
                             case 'mention':
                             case 'reply':
                                 if ($recipient_uuid == $this->getOwnerID()) {
-                                    $subject = $owner_name . ' replied to your post!';
+                                    $subject = \Idno\Core\Idno::site()->language()->_('%s replied to your post!', [$owner_name]);
                                 } else {
-                                    $subject = $owner_name . ' replied!';
+                                    $subject = \Idno\Core\Idno::site()->language()->_('%s replied!', [$owner_name]);
                                 }
                                 $notification_template = 'content/notification/reply';
                                 $context = 'reply';
